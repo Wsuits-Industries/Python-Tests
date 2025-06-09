@@ -16,7 +16,4 @@ ipAddresses = [
 for ip in ipAddresses:
     print(os.system(f"ping {ip}"))
 
-
-# Loop through a list of URLs and check which ones are alive.
-
 # Try brute-forcing a login page with a list of usernames and passwords (using requests module).

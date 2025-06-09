@@ -70,18 +70,43 @@ def silly():
     print("   |   ---   |   ")
     print("    +_______+    ")
 
-
-
-# While loop to repeat the process
-# while True:
-#     state = input("\n[+] Are you Happy? Yes (y) / No (n) / Quit (q): ").lower()
+#===============================
+#===============================
     
-#     if state == "y":
-#         happy()
-#     elif state == "n":
-#         sad()
-#     elif state == "q":
-#         print("[-] Exiting the Fun Program. See you next time!")
-#         break
-#     else:
-#         print("[!] Invalid input. Please enter 'y', 'n', or 'q'.")
+
+
+while True:
+
+    faceToCHoice = input("""
+============================|
+[+] What face should I make |
+[+] Silly Face          (si)|
+[+] crying face         (cr)|
+[+] cool face           (co)|
+[+] Nuetral Face        (nu)|
+[+] Surprosed Face      (su)|
+[+] Angry Face          (an)|
+[+] Sad Face            (sa)|
+============================|
+                         [+] :::::
+""")
+    #Conditional Statement for Input
+    #===============================
+    #===============================
+    
+    if faceToCHoice   == "si":
+        silly()
+    elif faceToCHoice == "cr":
+        crying()
+    elif faceToCHoice == "o":
+        cool()
+    elif faceToCHoice == "nu":
+        neutral()
+    elif faceToCHoice == "su":
+        surprised()
+    elif faceToCHoice == "an":
+        angry()
+    elif faceToCHoice == "sa":
+        sad()
+    else:
+        print("[-] I dont understan follow the Input Format")
