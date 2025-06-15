@@ -1,3 +1,4 @@
+
 import sys
 import requests
 
@@ -8,6 +9,9 @@ URLlist = [
     "https://apply.tatu.edu.gh",
     "https://vclass.tatu.edu.gh"
 ]
+response = requests.get(url)
+
 
 for url in URLlist:
-    print(f"[+]  Checking....... [{url}] ")
+    print(response.status_code)
+    print(response.text)
